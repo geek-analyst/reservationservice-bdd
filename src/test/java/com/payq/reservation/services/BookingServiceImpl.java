@@ -193,7 +193,6 @@ public class BookingServiceImpl implements BookingService {
 			List<String> columns = rows.get(i);
 			Booking bo = new Booking(columns.get(0), columns.get(1), Integer.parseInt(columns.get(2)),
 					Boolean.parseBoolean(columns.get(3)), null, columns.get(4));
-			// TestContext context = new TestContext();
 			context.setBookingRequest(bo);
 			responseList.add(this.createBooking(context));
 		}
