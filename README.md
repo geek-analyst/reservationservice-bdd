@@ -40,14 +40,19 @@ src
              +  ReservationProperties
   + test
     + java                          
-      + com.payq.reservation                      endpoints of the services
-           + BookingService
-           + BookingServiceImpl                  
-        + runner 
-             + CucumberTestSuite                  test runner(senerity runner/trigger configurations
-        + stepdefs                              Step definition files
-             + StepDefinitions
-             + TestContext                 
+      + com.payq.reservation
+           + services                              endpoints of the services
+              + BookingService
+              + BookingServiceImpl                  
+           + runners                               test runner(senerity runner/trigger configurations                       
+             + CucumberTestSuite              
+           + stepdefs                              Step definition files
+             + StepDefinition
+           + utils                                 Test Utility functions
+             + TestContext
+             + Utils
+             
+                             
   + resources
      +com.payq.reservation.utilities 
          application-test.properties             AUT properties files
